@@ -11,10 +11,36 @@
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.diplo",
-				"match": "\\b(?i)(out|get|insert|insertl|pointer|exit|comp|jump|jumpeq|jumpnoteq|jumpgreater|jumpgreatereq|jumpless|jumplesseq|label)(?-i)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "comment",
+					"match": "(//|;)(\\s\\S*)+"
+				},
+				{
+					"name": "entity.name.function",
+					"match": "\\b(?i)(out|get|insert|insertl|pointer|exit|comp|jump|jumpeq|jumpnoteq|jumpgreater|jumpgreatereq|jumpless|jumplesseq|label)(?-i)\\b"
+				},
+				{
+					"name": "comment",
+					"match": "[,]"
+				},
+				{
+					"name": "variable",
+					"match": "[\\$][a-zA-Z]+"
+				},
+				{
+					"name": "constant.numeric",
+					"match": "[0-9]+"
+				},
+				{
+					"name": "markup.other",
+					"match": "[a-zA-Z]+"
+				},
+				{
+					"name": "keyword.operator.new",
+					"match": "[+\\-\\*/%]"
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.diplo",
