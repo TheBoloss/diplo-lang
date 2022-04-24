@@ -4,6 +4,7 @@
     "description": "Official Diplo Language syntax highlighting extension.",
     "version": "1.0.0",
     "publisher": "TheBoloss",
+    "icon": "Logo128.png",
     "repository": {
         "type": "git",
         "url": "https://github.com/TheBoloss/diplo-lang.git"
