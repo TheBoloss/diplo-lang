@@ -1,0 +1,25 @@
+{
+    "name": "diplo-lang",
+    "displayName": "Diplo Language",
+    "description": "Official Diplo Language syntax highlighting extension.",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.66.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "diplo",
+            "aliases": ["Diplo", "diplo"],
+            "extensions": [".diplo"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "diplo",
+            "scopeName": "source.diplo",
+            "path": "./syntaxes/diplo.tmLanguage.json"
+        }]
+    }
+}

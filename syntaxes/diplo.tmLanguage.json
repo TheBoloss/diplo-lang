@@ -1,0 +1,32 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Diplo",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.diplo",
+				"match": "\\b(?i)(out|get|insert|insertl|pointer|exit|comp|jump|jumpeq|jumpnoteq|jumpgreater|jumpgreatereq|jumpless|jumplesseq|label)(?-i)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.diplo",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.diplo",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.diplo"
+}
