@@ -2,7 +2,7 @@
     "name": "diplo-lang",
     "displayName": "Diplo Language",
     "description": "Official Diplo Language syntax highlighting extension.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "TheBoloss",
     "icon": "assets/Logo128.png",
     "repository": {
@@ -16,16 +16,25 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "diplo",
-            "aliases": ["Diplo", "diplo"],
-            "extensions": [".diplo"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "diplo",
-            "scopeName": "source.diplo",
-            "path": "./syntaxes/diplo.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "diplo",
+                "aliases": [
+                    "Diplo",
+                    "diplo"
+                ],
+                "extensions": [
+                    ".diplo"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "diplo",
+                "scopeName": "source.diplo",
+                "path": "./syntaxes/diplo.tmLanguage.json"
+            }
+        ]
     }
 }
